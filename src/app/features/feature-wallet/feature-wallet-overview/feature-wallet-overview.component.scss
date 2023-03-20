@@ -1,0 +1,10 @@
+ion-content {
+  --background: red;
+}
+
+ion-footer,
+ion-header {
+  ion-toolbar {
+    --background: transparent;
+  }
+}

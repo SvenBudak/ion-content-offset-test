@@ -12,22 +12,6 @@ const routes: Routes = [
         path: 'overview',
         loadChildren: () => import('./feature-wallet-overview/feature-wallet-overview.module').then((m) => m.FeatureWalletOverviewModule)
       },
-      {
-        path: 'connect',
-        loadChildren: () => import('./feature-wallet-connect/feature-wallet-connect.module').then((m) => m.FeatureWalletConnectModule)
-      },
-      {
-        path: 'confirm',
-        loadChildren: () => import('./feature-wallet-confirm/feature-wallet-confirm.module').then((m) => m.FeatureWalletConfirmModule)
-      },
-      {
-        path: ':walletId/collection',
-        loadChildren: () => import('./feature-wallet-collection/feature-wallet-collection.module').then(m => m.FeatureWalletCollectionModule)
-      },
-      {
-        path: ':walletId/collection/:collectionId/token',
-        loadChildren: () => import('./feature-wallet-collection-detail/feature-wallet-collection-detail.module').then((m) => m.FeatureWalletCollectionDetailModule),
-      },
       { 
         path: '**', redirectTo: 'overview'
       },
