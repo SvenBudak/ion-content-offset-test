@@ -4,6 +4,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'wallet',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     children: [
       {
         path: 'wallet',
